@@ -1,6 +1,6 @@
-# 🎬 MovieApp
+# 🎬 Brazil Core
 
-Aplicativo desenvolvido com **React Native + Expo** para explorar e salvar filmes favoritos. O projeto conta com navegação por abas, busca, detalhes de filmes e um sistema de favoritos.
+Aplicativo desenvolvido com **React Native + Expo** para acompanhar seus atletas brasileiros favoritos. O projeto conta com navegação por abas, busca, detalhes e um sistema de favoritos.
 
 ## 📁 Estrutura de Pastas
 
@@ -8,14 +8,14 @@ Aplicativo desenvolvido com **React Native + Expo** para explorar e salvar filme
 app/
 ├── (tabs)/                 # Telas principais de navegação
 │   ├── _layout.tsx        # Layout da navegação por abas
-│   ├── buscar.tsx         # Tela de busca de filmes
-│   ├── favoritos.tsx      # Tela de filmes favoritos
+│   ├── buscar.tsx         # Tela de busca
+│   ├── favoritos.tsx      # Tela de favoritos
 │   ├── index.tsx          # Tela inicial (Home)
 │   └── perfil.tsx         # Tela de perfil do usuário
 │
 ├── movies/
-│   ├── [id].tsx           # Página de detalhes de um filme
-│   └── _layout.tsx        # Layout para páginas de filme
+│   ├── [id].tsx           # Página de detalhes
+│   └── _layout.tsx        # Layout para páginas
 │
 ├── assets/
 │   ├── fonts/             # Fontes utilizadas
@@ -27,7 +27,7 @@ app/
 │       └── rankingGradient.png
 │
 ├── components/
-│   ├── MovieCard.tsx      # Componente de cartão de filme
+│   ├── MovieCard.tsx      # Componente de cartão
 │   └── SearchBar.tsx      # Componente de busca
 │
 ├── constants/             # Constantes reutilizáveis
@@ -44,6 +44,10 @@ app/
 ├── globals.css            # Estilos globais
 ```
 
+## Estado Atual
+- **Testes com API de filme**
+- **Criação das páginas**
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **React Native** com **Expo**
@@ -51,14 +55,13 @@ app/
 - **React Navigation**
 - **Axios**
 - **Tailwind CSS (via nativewind)**
-- **API de Filmes** (ex: TMDb, OMDb)
+- **API de Filmes como teste** (ex: TMDb, OMDb)
 
 ## 🚀 Como Rodar o Projeto
 
 1. **Clone o repositório**
    ```bash
-   git clone https://github.com/seuusuario/movieapp.git
-   cd movieapp
+   git clone https://github.com/pacheco365/study-app_expo.git
    ```
 
 2. **Instale as dependências**
@@ -81,10 +84,10 @@ app/
 ## 📱 Funcionalidades
 
 - [x] Navegação por abas (Home, Buscar, Favoritos, Perfil)
-- [x] Listagem de filmes com destaque
-- [x] Busca de filmes por nome
-- [x] Página de detalhes com informações do filme
-- [x] Favoritar e desfavoritar filmes
+- [x] Listagem de atletas com destaque
+- [x] Busca de atletas por nome
+- [x] Página de detalhes com informações do atleta
+- [x] Favoritar e desfavoritar atletas
 
 ## 📦 Scripts Úteis
 
@@ -97,20 +100,18 @@ npm run web         # Executa no navegador
 
 ## 🧪 Testes
 
-> Ainda não implementado. Sinta-se à vontade para contribuir adicionando testes com **Jest** ou **React Native Testing Library**!
+> Ainda não implementado.
 
 ## 💡 Próximos Passos
 
 - [ ] Autenticação de usuário
 - [ ] Armazenamento local com AsyncStorage
-- [ ] Avaliação e comentários em filmes
+- [ ] Avaliação e comentários
+- [ ] Utilização de uma API de esportes
 - [ ] Tela de login e cadastro
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+- [ ] Página de notícias
+- [ ] Sistema de notificação
 
 ---
 
-📍 Projeto desenvolvido por **[Seu Nome]**.  
-Contribuições são bem-vindas!
+📍 Projeto desenvolvido por **Gabriel Pacheco**.  
