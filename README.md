@@ -1,50 +1,116 @@
-# Welcome to your Expo app 👋
+# 🎬 MovieApp
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicativo desenvolvido com **React Native + Expo** para explorar e salvar filmes favoritos. O projeto conta com navegação por abas, busca, detalhes de filmes e um sistema de favoritos.
 
-## Get started
+## 📁 Estrutura de Pastas
 
-1. Install dependencies
+```
+app/
+├── (tabs)/                 # Telas principais de navegação
+│   ├── _layout.tsx        # Layout da navegação por abas
+│   ├── buscar.tsx         # Tela de busca de filmes
+│   ├── favoritos.tsx      # Tela de filmes favoritos
+│   ├── index.tsx          # Tela inicial (Home)
+│   └── perfil.tsx         # Tela de perfil do usuário
+│
+├── movies/
+│   ├── [id].tsx           # Página de detalhes de um filme
+│   └── _layout.tsx        # Layout para páginas de filme
+│
+├── assets/
+│   ├── fonts/             # Fontes utilizadas
+│   └── icons/             # Ícones do projeto
+│   └── images/            # Imagens (logo, fundo, etc.)
+│       ├── bg.png
+│       ├── highlight.png
+│       ├── logo.png
+│       └── rankingGradient.png
+│
+├── components/
+│   ├── MovieCard.tsx      # Componente de cartão de filme
+│   └── SearchBar.tsx      # Componente de busca
+│
+├── constants/             # Constantes reutilizáveis
+│
+├── interfaces/            # Tipagens e contratos
+│   └── interfaces.d.ts
+│
+├── services/              # Camada de serviços e APIs
+│   ├── api.ts             # Configuração da API
+│   └── useFetch.ts        # Hook personalizado para requisições
+│
+├── types/                 # Tipagens auxiliares
+│
+├── globals.css            # Estilos globais
+```
 
+## 🛠️ Tecnologias Utilizadas
+
+- **React Native** com **Expo**
+- **TypeScript**
+- **React Navigation**
+- **Axios**
+- **Tailwind CSS (via nativewind)**
+- **API de Filmes** (ex: TMDb, OMDb)
+
+## 🚀 Como Rodar o Projeto
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/seuusuario/movieapp.git
+   cd movieapp
+   ```
+
+2. **Instale as dependências**
    ```bash
    npm install
    ```
 
-2. Start the app
-
-   ```bash
-    npx expo start
+3. **Configure as variáveis de ambiente**
+   Crie um arquivo `.env` com as chaves da API:
+   ```
+   API_URL=https://suaapi.com
+   API_KEY=sua_chave
    ```
 
-In the output, you'll find options to open the app in a
+4. **Inicie o projeto**
+   ```bash
+   npx expo start
+   ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📱 Funcionalidades
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- [x] Navegação por abas (Home, Buscar, Favoritos, Perfil)
+- [x] Listagem de filmes com destaque
+- [x] Busca de filmes por nome
+- [x] Página de detalhes com informações do filme
+- [x] Favoritar e desfavoritar filmes
 
-## Get a fresh project
-
-When you're ready, run:
+## 📦 Scripts Úteis
 
 ```bash
-npm run reset-project
+npm run start       # Inicia o projeto com Expo
+npm run android     # Executa no Android
+npm run ios         # Executa no iOS
+npm run web         # Executa no navegador
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🧪 Testes
 
-## Learn more
+> Ainda não implementado. Sinta-se à vontade para contribuir adicionando testes com **Jest** ou **React Native Testing Library**!
 
-To learn more about developing your project with Expo, look at the following resources:
+## 💡 Próximos Passos
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- [ ] Autenticação de usuário
+- [ ] Armazenamento local com AsyncStorage
+- [ ] Avaliação e comentários em filmes
+- [ ] Tela de login e cadastro
 
-## Join the community
+## 📄 Licença
 
-Join our community of developers creating universal apps.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+📍 Projeto desenvolvido por **[Seu Nome]**.  
+Contribuições são bem-vindas!
