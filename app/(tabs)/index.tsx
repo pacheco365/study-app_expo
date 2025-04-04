@@ -40,7 +40,7 @@ export default function Index() {
           <View className="flex-1 mt-5">
         <SearchBar
           onPress={() => router.push("/buscar")}
-          placeholder="Busque por um atleta"
+          placeholder="Busque por um filme"
         />
 
         <>
@@ -55,10 +55,10 @@ export default function Index() {
             keyExtractor={(item) => item.id.toString()}
             numColumns={3}
             columnWrapperStyle={{
-          justifyContent: 'flex-start',
-          gap: 20,
-          paddingRight: 5,
-          marginBottom: 10
+              justifyContent: 'flex-start',
+              gap: 20,
+              paddingRight: 5,
+              marginBottom: 10
             }}
             className="mt-2 pb-32"
             scrollEnabled={false}
